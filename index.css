@@ -5,12 +5,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #393939; /* Light gray background color */
+    background-color: #ffffff; /* Dark gray background color */
     font-family: 'Arial', sans-serif; /* Nicer font, you can replace 'Arial' with your preferred font */
 }
 
 h1 {
-    color: #333; /* Dark gray text color */
+    color: #000000; /* White text color */
 }
 
 button {
@@ -25,5 +25,46 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #2a5ea6; /* Darker green on hover */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* Changed display to inline-block */
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: -50px;
+    background-color: #7c7c7c; /* Dark gray background color */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* Center the text horizontally */
+}
+
+.dropdown-content a {
+    color: #ffffff; /* White text color */
+    padding: 12px 0; /* Adjust vertical padding */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2a5ea6; /* Darker gray on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
